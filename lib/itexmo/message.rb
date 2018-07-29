@@ -1,12 +1,14 @@
 require 'net/http'
 require 'json'
 
+# module
 module Itexmo
+  # message class
   class Message
     attr_accessor :api_code, :message, :to
 
     PARAMS = {}
-    API_ENDPOINT = 'https://www.itexmo.com/php_api'
+    API_ENDPOINT = 'https://www.itexmo.com/php_api'.freeze
 
     def initialize(options = {})
       @api_code = Itexmo.configuration.api_code
@@ -54,7 +56,7 @@ module Itexmo
       when '12'
         raise Errors::BadRequest, "Invalid request. You can't set message priorities on non corporate apicodes"
       when '13'
-        raise Errors::BadRequest, "Invalid or Not Registered Custom Sender ID."
+        raise Errors::BadRequest, 'Invalid or Not Registered Custom Sender ID.'
       end
     end
 

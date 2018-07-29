@@ -14,8 +14,6 @@ module Itexmo
       @api_code
     end
 
-    def priority
-      @priority
-    end
+    attr_reader :priority
   end
 end

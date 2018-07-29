@@ -1,11 +1,12 @@
 require 'net/http'
 require 'json'
-
+# module
 module Itexmo
+  # service
   class Service
     attr_accessor :api_code
 
-    API_ENDPOINT = 'https://www.itexmo.com/php_api'
+    API_ENDPOINT = 'https://www.itexmo.com/php_api'.freeze
 
     def initialize
       @api_code = Itexmo.configuration.api_code

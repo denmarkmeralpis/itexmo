@@ -1,11 +1,12 @@
 require 'net/http'
 require 'json'
-
+# module
 module Itexmo
+  # sms
   class Sms
     attr_accessor :api_code
 
-    API_ENDPOINT = 'https://www.itexmo.com/php_api'
+    API_ENDPOINT = 'https://www.itexmo.com/php_api'.freeze
     PARAMETERS = {}
 
     def initialize

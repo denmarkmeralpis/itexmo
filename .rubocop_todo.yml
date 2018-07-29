@@ -127,7 +127,7 @@ Layout/TrailingWhitespace:
 # Offense count: 1
 Lint/DuplicateMethods:
   Exclude:
-    # - 'lib/itexmo.rb'
+    - 'lib/itexmo.rb'
 
 # Offense count: 1
 Metrics/AbcSize:
@@ -162,7 +162,7 @@ Style/Documentation:
 # Cop supports --auto-correct.
 Style/ExpandPathArguments:
   Exclude:
-    - 'itexmo.gemspec'
+    # - 'itexmo.gemspec'
 
 # Offense count: 1
 # Cop supports --auto-correct.
@@ -170,23 +170,23 @@ Style/ExpandPathArguments:
 # SupportedStyles: ruby19, hash_rockets, no_mixed_keys, ruby19_no_mixed_keys
 Style/HashSyntax:
   Exclude:
-    - 'Rakefile'
+    # - 'Rakefile'
 
 # Offense count: 6
 # Cop supports --auto-correct.
 Style/MutableConstant:
   Exclude:
     - 'lib/itexmo/message.rb'
-    - 'lib/itexmo/service.rb'
+    # - 'lib/itexmo/service.rb'
     - 'lib/itexmo/sms.rb'
-    - 'lib/itexmo/version.rb'
+    # - 'lib/itexmo/version.rb'
 
 # Offense count: 2
 # Cop supports --auto-correct.
 # Configuration parameters: PreferredDelimiters.
 Style/PercentLiteralDelimiters:
   Exclude:
-    - 'itexmo.gemspec'
+    # - 'itexmo.gemspec'
 
 # Offense count: 26
 # Cop supports --auto-correct.
@@ -194,14 +194,14 @@ Style/PercentLiteralDelimiters:
 # SupportedStyles: single_quotes, double_quotes
 Style/StringLiterals:
   Exclude:
-    - 'Gemfile'
-    - 'Rakefile'
-    - 'bin/console'
-    - 'itexmo.gemspec'
-    - 'lib/itexmo/message.rb'
-    - 'spec/itexmo_spec.rb'
-    - 'spec/itextmo/sms_spec.rb'
-    - 'spec/spec_helper.rb'
+    # - 'Gemfile'
+    # - 'Rakefile'
+    # - 'bin/console'
+    # - 'itexmo.gemspec'
+    # - 'lib/itexmo/message.rb'
+    # - 'spec/itexmo_spec.rb'
+    # - 'spec/itextmo/sms_spec.rb'
+    # - 'spec/spec_helper.rb'
 
 # Offense count: 1
 # Cop supports --auto-correct.
@@ -209,13 +209,13 @@ Style/StringLiterals:
 # Whitelist: to_ary, to_a, to_c, to_enum, to_h, to_hash, to_i, to_int, to_io, to_open, to_path, to_proc, to_r, to_regexp, to_str, to_s, to_sym
 Style/TrivialAccessors:
   Exclude:
-    - 'lib/itexmo/configuration.rb'
+    # - 'lib/itexmo/configuration.rb'
 
 # Offense count: 2
 # Cop supports --auto-correct.
 Style/UnneededPercentQ:
   Exclude:
-    - 'itexmo.gemspec'
+    # - 'itexmo.gemspec'
 
 # Offense count: 46
 # Configuration parameters: AllowHeredoc, AllowURI, URISchemes, IgnoreCopDirectives, IgnoredPatterns.

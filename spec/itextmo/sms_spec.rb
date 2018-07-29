@@ -13,17 +13,17 @@ RSpec.describe Itexmo::Sms do
 
   context '#display_outgoing' do
     it 'returns success desc order' do
-      stub_request(:get, uri + '/display_outgoing.php').with(query: { apicode: api_code, sortby: 'desc' }).to_return(body: "EMPTY")
+      stub_request(:get, uri + '/display_outgoing.php').with(query: { apicode: api_code, sortby: 'desc' }).to_return(body: 'EMPTY')
       expect(client.display_outgoing('desc')).to eq([])
     end
 
     it 'returns success without specifying sortby params' do
-      stub_request(:get, uri + '/display_outgoing.php').with(query: { apicode: api_code, sortby: 'asc' }).to_return(body: "EMPTY")
+      stub_request(:get, uri + '/display_outgoing.php').with(query: { apicode: api_code, sortby: 'asc' }).to_return(body: 'EMPTY')
       expect(client.display_outgoing).to eq([])
     end
 
     it 'raises invalid parameter' do
-      stub_request(:get, uri + '/display_outgoing.php').with(query: { apicode: api_code, sortby: 'invalid' }).to_return(body: "INVALID PARAMETERS")
+      stub_request(:get, uri + '/display_outgoing.php').with(query: { apicode: api_code, sortby: 'invalid' }).to_return(body: 'INVALID PARAMETERS')
       expect { client.display_outgoing('invalid') }.to raise_error(Itexmo::Errors::BadRequest)
     end
   end

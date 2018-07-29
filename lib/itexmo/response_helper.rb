@@ -1,7 +1,8 @@
 require 'net/http'
 require 'json'
-
+# helper
 module Itexmo
+  # helper
   class ResponseHelper
     attr_accessor :body
 
