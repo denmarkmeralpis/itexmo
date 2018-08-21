@@ -21,7 +21,7 @@ Or install it yourself as:
 
 Finally, generate initializer
     
-    $ rails g initializer:itexmo
+    $ rails g initializer:itexmo initializer
     
 this will create a file under `config/initializer/itexmo.rb` Note: `api_code` should be supplied inside the itextmo.rb.
 
